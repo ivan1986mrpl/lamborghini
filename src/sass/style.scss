@@ -1,0 +1,83 @@
+
+@import 'blocks/reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");/* подключаем стили слайдера */
+@font-face {
+    font-family: 'Impact', sans-serif;
+    src: url('../fonts/impact.woff2');
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+ul, li {
+    list-style-type: none;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.big-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0px 10px;    
+}
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0px 10px;  
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #040404;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden; /* все,что за пределами видимости, недоступно */
+    display: flex;
+    flex-direction: column;
+}
+/* --1.20---bakground ----------- */
+.ibg {
+    position: relative;    
+}
+.ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/* ---------------- */
+img {/* для адаптации всех картинок */
+    max-width: 100%;
+}
+
+@media (max-width: 1200px) {};
+/* &__video {
+    padding: 0px 0px 56.25% 0px;
+} */
+/* width="560" height="315" изображение или видео адаптируется */
+/* 315/560=56.25 из iframe */
+
+@import 'blocks/page';
+@import 'blocks/slider';/* подключаем стили слайдера */
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/main-block';
+@import 'blocks/info';
+@import 'blocks/track';
+@import 'blocks/evo';
+@import 'blocks/blog';
+
+

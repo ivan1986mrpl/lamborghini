@@ -1,0 +1,178 @@
+.evo {
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+.evo-black {
+    background: #363636;
+    color: #FFFF;
+    padding: 100px 0px 50px 0px;
+/* ============== */
+    &__inner {
+        position: relative;
+    }
+    &__inner::before {
+        content: '';
+        background-image: url('../img/evo/dec1.svg');
+        width: 185px; 
+        height: 213px;
+        position: absolute;
+        top: 210px;
+        left: -130px;
+    }
+    &__inner::after {
+        content: '';
+        background-image: url('../img/evo/dec2.svg');
+        width: 498px;
+        height: 572px;
+        position: absolute;
+        top: 290px;
+        left: -38px;
+    }
+/* ============== */
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 195px;
+    }
+    &__title {
+        padding-right: 50px;
+    }
+    &__infobox {
+        flex-basis: 437px;
+    }
+    &__text:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+    &__car {
+    }
+    &__img {
+        display: block;
+        margin: 200px auto 60px;
+        position: relative;
+        z-index: 1;
+    }
+    &__descr-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0 65px;
+    }
+    &__descr-list dd {
+        text-transform: uppercase;
+    }
+}
+.evo-white {
+/* ================ */
+    &__inner {
+        padding-top: 125px;
+        position: relative;
+    }
+    &__inner::before{
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 360px;
+        background-image: url('../img/evo/dec3.png');
+        width: 274px;
+        height: 257px;
+    }
+    &__inner::after {
+        content: '';
+        position: absolute;
+        top: 115px;
+        left: 600px;
+        background-image: url('../img/evo/dec4.png');
+        width: 324px;
+        height: 311px;    
+    }
+/* ================ */
+    &__text:first-child {
+        max-width: 285px;
+    }
+    &__text:nth-child(2) {
+        max-width: 437px;
+    }
+    &__text:nth-child(3) {
+        max-width: 590px
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__video {
+        margin-top: 100px;
+        background: url('../img/evo/Polygon.png') center (center / cover) no-repeat;
+        height: 265px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__video-link {
+    }
+    &__video-link span {
+        color: #FFFFFF;
+    }
+    &__image {
+        display: block;
+        margin: 0 auto;
+        transition: all 0.4s ease 0s;
+    }
+    &__image:hover {
+        transform: scale(1.15);
+    }
+}
+@media (max-width: 969px) {
+    .evo-black {
+        &__descr-list {
+            gap: 20px 30px;
+        }
+    }
+    .evo-white {
+        &__inner::after {
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .evo {
+        margin-bottom: 50px;
+    }
+    .evo-white {
+        &__inner {
+            padding-top: 50px;
+        }
+    }
+    .evo-black {
+        padding: 50px 0px 30px 0px;
+    }
+}
+@media (max-width: 669px) {
+    .evo-black {
+        &__info {
+            display: block;
+        }
+        &__title {
+            margin: 0px 0px 30px 0px;
+        }
+        &__inner::after {
+            display: none;
+        }
+        &__descr-list {
+            display: block;
+            text-align: center;
+        }
+        &__descr-list div {
+            padding: 7px 0px 7px 0px;
+        }
+    }
+    .evo-white {
+        &__inner::before {
+            display: none;
+        }
+        &__text:nth-child(1),
+        &__text:nth-child(2),
+        &__text:nth-child(3) {
+            max-width: 100%;
+        }
+    }
+}

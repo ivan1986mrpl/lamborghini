@@ -1,0 +1,56 @@
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-left {
+  transform: translateX(-41px);
+}
+.swiper-button-right {
+  transform: translateX(8px);
+}
+.swiper-scrollbar {
+}
+.blog {
+  &__slider {
+    position: relative;
+    padding-top: 50px;/* 20 мaржин и сама кнопка 30 */
+    margin-bottom: 100px;
+  }
+  &__button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 50%;
+  }
+  &__item {
+    &_img {
+      margin-bottom: 20px;
+    }
+    &_title {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      min-height: 46px;
+    }
+    &_text {
+      margin-bottom: 10px;
+    }
+    &_link {
+      font-size: 12px;
+      color: #363636;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .blog {
+    &__item {
+      &_img {
+        width: 100%;
+      }
+    }
+  }
+}

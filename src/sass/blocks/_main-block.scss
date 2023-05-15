@@ -1,0 +1,90 @@
+.promo {
+    background-image: url('../img/mainblock/Rectangle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__container {
+    }
+    &__inner {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Impact', sans-serif;
+        font-weight: 400;
+        font-size: 76px;
+        letter-spacing: 0.08em;
+        color: #040404;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-family: 'Impact', sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        color: #040404;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #040404;
+        align-self: center;/* чтобы не растягивался на всю ширину */
+    }
+    &__subtitle span {
+        font-size: 34px;
+        display: block;
+        color: #9F6B08;
+        padding: 10px 0;
+    }
+    &__text {
+        font-size: 16px;
+        color: #363636;
+        margin-bottom: 10px;
+    }
+    &__arrow {
+        margin-top: auto;
+        margin-bottom: 30px;
+        align-self: center;
+        transition: all 0.3s ease 0s;
+    }
+    &__arrow:hover {
+        transform: scale(1.15);
+    }
+}
+@media (max-width: 1100px) {
+    .promo {
+        background-position: left center;
+        &__title {
+            font-size: 64px;
+        }
+        &__subtitle {
+            font-size: 42px;
+        }
+        &__subtitle span {
+            font-size: 32px;
+        }
+    }
+}
+@media (max-width: 560px) {
+    .promo {
+        &__title {
+            font-size: 48px;
+        }
+        &__subtitle {
+            font-size: 34px;
+        }
+        &__subtitle span {
+            font-size: 26px;
+        }
+    }
+}
+@media (max-width: 340px) {
+    .promo {
+        &__title {
+            font-size: 42px;
+        }
+        &__subtitle {
+            font-size: 30px;
+        }
+    }
+}
